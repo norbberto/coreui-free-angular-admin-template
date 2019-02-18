@@ -21,9 +21,10 @@ export const navItems: NavData[] = [
       text: 'NEW'
     }
   },
+  /*
   {
     title: true,
-    name: 'Theme'
+    name: 'Cadastros'
   },
   {
     name: 'Colors',
@@ -34,107 +35,167 @@ export const navItems: NavData[] = [
     name: 'Typography',
     url: '/theme/typography',
     icon: 'icon-pencil'
-  },
+  },*//*
   {
     title: true,
-    name: 'Components'
-  },
+    name: 'Cadastros'
+  },*/
+
   {
-    name: 'Base',
+    name: 'CADASTROS',
+    url: '/base',
+    icon: 'icon-puzzle',
+    children: [
+
+
+
+  {
+    name: 'Cliente',
     url: '/base',
     icon: 'icon-puzzle',
     children: [
       {
-        name: 'Cards',
+        name: 'Listar',
         url: '/base/cards',
         icon: 'icon-puzzle'
       },
       {
-        name: 'Carousels',
+        name: 'Novo',
         url: '/base/carousels',
         icon: 'icon-puzzle'
       },
       {
-        name: 'Collapses',
+        name: 'Editar',
         url: '/base/collapses',
         icon: 'icon-puzzle'
       },
       {
-        name: 'Forms',
+        name: 'excluir',
         url: '/base/forms',
         icon: 'icon-puzzle'
-      },
+      }
+    ]
+  },
+
+
+
+
+
+  {
+    name: 'Produto',
+    url: '/base',
+    icon: 'icon-puzzle',
+    children: [
       {
-        name: 'Pagination',
+        name: 'Listar',
         url: '/base/paginations',
         icon: 'icon-puzzle'
       },
       {
-        name: 'Popovers',
+        name: 'Novo',
         url: '/base/popovers',
         icon: 'icon-puzzle'
       },
       {
-        name: 'Progress',
+        name: 'Editar',
         url: '/base/progress',
         icon: 'icon-puzzle'
       },
       {
-        name: 'Switches',
+        name: 'Excluir',
         url: '/base/switches',
         icon: 'icon-puzzle'
-      },
+      }
+    ]
+  },
+
+]
+},
+
+
+  {
+    divider: true
+  },/*
+  {
+    title: true,
+    name: 'Operacional'
+  },*/
+
+  {
+    name: 'OPERACIONAL',
+    url: '/base',
+    icon: 'icon-puzzle',
+    children: [
+
+  {
+    name: 'Orçamento',
+    url: '/base',
+    icon: 'icon-puzzle',
+    children: [
       {
-        name: 'Tables',
+        name: 'Listar',
         url: '/base/tables',
         icon: 'icon-puzzle'
       },
       {
-        name: 'Tabs',
+        name: 'Novo',
         url: '/base/tabs',
         icon: 'icon-puzzle'
       },
       {
-        name: 'Tooltips',
+        name: 'Editar',
+        url: '/base/tooltips',
+        icon: 'icon-puzzle'
+      },
+      {
+        name: 'Excluir',
         url: '/base/tooltips',
         icon: 'icon-puzzle'
       }
     ]
   },
   {
-    name: 'Buttons',
+    name: 'Pedido',
     url: '/buttons',
     icon: 'icon-cursor',
     children: [
       {
-        name: 'Buttons',
+        name: 'Listar',
         url: '/buttons/buttons',
         icon: 'icon-cursor'
       },
       {
-        name: 'Dropdowns',
+        name: 'Novo',
         url: '/buttons/dropdowns',
         icon: 'icon-cursor'
       },
       {
-        name: 'Brand Buttons',
+        name: 'Editar',
+        url: '/buttons/brand-buttons',
+        icon: 'icon-cursor'
+      },
+      {
+        name: 'Excluir',
         url: '/buttons/brand-buttons',
         icon: 'icon-cursor'
       }
     ]
   },
   {
-    name: 'Charts',
+    name: 'teste',
     url: '/charts',
-    icon: 'icon-pie-chart'
+    icon: 'icon-pie-chart',
+   /* attributes: { disabled: true }*/
   },
+
+
   {
-    name: 'Icons',
+    name: 'Romaneio',
     url: '/icons',
     icon: 'icon-star',
     children: [
       {
-        name: 'CoreUI Icons',
+        name: 'Listar',
         url: '/icons/coreui-icons',
         icon: 'icon-star',
         badge: {
@@ -143,12 +204,12 @@ export const navItems: NavData[] = [
         }
       },
       {
-        name: 'Flags',
+        name: 'Novo',
         url: '/icons/flags',
         icon: 'icon-star'
       },
       {
-        name: 'Font Awesome',
+        name: 'Editar',
         url: '/icons/font-awesome',
         icon: 'icon-star',
         badge: {
@@ -157,29 +218,58 @@ export const navItems: NavData[] = [
         }
       },
       {
-        name: 'Simple Line Icons',
+        name: 'Excluir',
         url: '/icons/simple-line-icons',
         icon: 'icon-star'
       }
     ]
   },
+
+]
+},
+
   {
-    name: 'Notifications',
+    divider: true
+  },
+
+  {
+    name: 'VENDAS',
+    url: '/base',
+    icon: 'icon-puzzle',
+    children: [
+
+
+  {
+    title: true,
+    name: 'Vendas'
+  },
+
+  {
+    name: 'Caixa',
     url: '/notifications',
     icon: 'icon-bell',
+    badge: {
+      variant: 'success',
+      text: 'NEW'
+    },
     children: [
       {
-        name: 'Alerts',
+        name: 'Vender',
         url: '/notifications/alerts',
         icon: 'icon-bell'
       },
       {
-        name: 'Badges',
+        name: 'Abrir Caixa',
         url: '/notifications/badges',
         icon: 'icon-bell'
       },
       {
-        name: 'Modals',
+        name: 'Sangria',
+        url: '/notifications/modals',
+        icon: 'icon-bell'
+      },
+      {
+        name: 'Fechar Caixa',
         url: '/notifications/modals',
         icon: 'icon-bell'
       }
@@ -194,13 +284,15 @@ export const navItems: NavData[] = [
       text: 'NEW'
     }
   },
+]
+},
   {
     divider: true
   },
   {
     title: true,
-    name: 'Extras',
-  },
+    name: 'Configurações',
+  },/*
   {
     name: 'Pages',
     url: '/pages',
@@ -227,7 +319,7 @@ export const navItems: NavData[] = [
         icon: 'icon-star'
       }
     ]
-  },
+  },*/
   {
     name: 'Disabled',
     url: '/dashboard',
@@ -239,7 +331,7 @@ export const navItems: NavData[] = [
     attributes: { disabled: true },
   },
   {
-    name: 'Download CoreUI',
+    name: 'Grupo Norba',
     url: 'http://coreui.io/angular/',
     icon: 'icon-cloud-download',
     class: 'mt-auto',
@@ -247,7 +339,7 @@ export const navItems: NavData[] = [
     attributes: { target: '_blank', rel: 'noopener' }
   },
   {
-    name: 'Try CoreUI PRO',
+    name: 'Grupo Norba PRO',
     url: 'http://coreui.io/pro/angular/',
     icon: 'icon-layers',
     variant: 'danger',
